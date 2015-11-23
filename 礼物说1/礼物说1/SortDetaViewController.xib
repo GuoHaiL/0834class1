@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SortDetaViewController">
+            <connections>
+                <outlet property="my4Img" destination="I7c-nW-Ka7" id="1gP-Be-bEV"/>
+                <outlet property="my4Scroll" destination="IHM-HR-ZRL" id="vFz-KQ-qzO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="S2i-jZ-s3Z" id="Yrq-Tx-eJ6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-HR-ZRL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2i-jZ-s3Z">
+                            <rect key="frame" x="0.0" y="200" width="374" height="521"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                        </webView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-nW-Ka7">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="200"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="I7c-nW-Ka7" secondAttribute="bottom" constant="521" id="2Kx-8f-4qf"/>
+                        <constraint firstItem="I7c-nW-Ka7" firstAttribute="centerX" secondItem="IHM-HR-ZRL" secondAttribute="centerX" id="I7G-f8-CnD"/>
+                        <constraint firstAttribute="bottom" secondItem="S2i-jZ-s3Z" secondAttribute="bottom" id="PO5-Py-q4b"/>
+                        <constraint firstItem="I7c-nW-Ka7" firstAttribute="height" secondItem="IHM-HR-ZRL" secondAttribute="height" multiplier="0.3" id="Q8n-my-TuV"/>
+                        <constraint firstAttribute="trailing" secondItem="S2i-jZ-s3Z" secondAttribute="trailing" id="U3N-IR-tYq"/>
+                        <constraint firstItem="S2i-jZ-s3Z" firstAttribute="leading" secondItem="IHM-HR-ZRL" secondAttribute="leading" id="ccv-kc-ghA"/>
+                        <constraint firstItem="I7c-nW-Ka7" firstAttribute="top" secondItem="IHM-HR-ZRL" secondAttribute="top" id="kHH-vD-m5s"/>
+                        <constraint firstItem="I7c-nW-Ka7" firstAttribute="leading" secondItem="IHM-HR-ZRL" secondAttribute="leading" id="n9N-VV-3oa"/>
+                        <constraint firstAttribute="trailing" secondItem="I7c-nW-Ka7" secondAttribute="trailing" id="qwc-LG-8bn"/>
+                        <constraint firstItem="S2i-jZ-s3Z" firstAttribute="top" secondItem="I7c-nW-Ka7" secondAttribute="bottom" id="s8H-tr-4L3"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IHM-HR-ZRL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I1m-gc-nid"/>
+                <constraint firstItem="IHM-HR-ZRL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XCH-1X-0oX"/>
+                <constraint firstItem="IHM-HR-ZRL" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Xfc-1j-ddi"/>
+                <constraint firstItem="IHM-HR-ZRL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="snH-7K-llQ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="345.5" y="279.5"/>
+        </view>
+    </objects>
+</document>
